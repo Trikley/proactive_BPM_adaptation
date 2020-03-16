@@ -1,0 +1,287 @@
+[Log] Serializing /root/app/workdir/0-epochlogs.epochlog
+[Log] Serializing /root/app/workdir/0-model.h5
+[Log] Serializing /root/app/workdir/0-results.csv
+[Log] Serializing /root/app/workdir/utility/__pycache__/exceptions.cpython-35.pyc
+[Log] Serializing /root/app/workdir/utility/__pycache__/regularization.cpython-35.pyc
+[Log] Serializing /root/app/workdir/utility/__pycache__/run.cpython-35.pyc
+[Log] Serializing /root/app/workdir/utility/__pycache__/configuration.cpython-35.pyc
+[Log] Serializing /root/app/workdir/utility/__pycache__/models.cpython-35.pyc
+[Log] Serializing /root/app/workdir/utility/__pycache__/generator.cpython-35.pyc
+[Log] Serializing /root/app/workdir/utility/__pycache__/preprocessing.cpython-35.pyc
+[Log] Serializing /root/app/workdir/utility/__pycache__/hyperparameteroptimization.cpython-35.pyc
+[Log] Serializing /root/app/workdir/utility/__pycache__/enums.cpython-35.pyc
+[Log] Serializing /root/app/workdir/utility/__pycache__/dataoperations.cpython-35.pyc
+[Log] Serializing /root/app/workdir/datadefinitions/__pycache__/cargo2000.cpython-35.pyc
+[Log] Serializing /root/app/workdir/datadefinitions/__pycache__/generic.cpython-35.pyc
+Send training results
+[Log] Cleaned working directory
+[Log] Finished work package
+[Log] Fetch work.
+Results sent.
+[Log] Training Work package received from server: caise2019_cargo2000 4d26f196-dccd-41db-8b42-d7e5bc9c8277
+[Log] Cleaned working directory
+[Log] Deserializing 26 files 
+[Log] Deserializing /root/app/workdir/caise2019_bpic2012.py
+[Log] Deserializing /root/app/workdir/caise2019_bpic2017.py
+[Log] Deserializing /root/app/workdir/caise2019_bpic2018.py
+[Log] Deserializing /root/app/workdir/caise2019_c2k.py
+[Log] Deserializing /root/app/workdir/caise2019_tt.py
+[Log] Deserializing /root/app/workdir/requirements.txt
+[Log] Deserializing /root/app/workdir/requirements_gpu.txt
+[Log] Deserializing /root/app/workdir/version.xml
+[Log] Deserializing /root/app/workdir/datadefinitions/bpi2012.py
+[Log] Deserializing /root/app/workdir/datadefinitions/bpi2017.py
+[Log] Deserializing /root/app/workdir/datadefinitions/bpi2018.py
+[Log] Deserializing /root/app/workdir/datadefinitions/cargo2000.py
+[Log] Deserializing /root/app/workdir/datadefinitions/cargo2000generic.py
+[Log] Deserializing /root/app/workdir/datadefinitions/generic.py
+[Log] Deserializing /root/app/workdir/datadefinitions/transformingtransport.py
+[Log] Deserializing /root/app/workdir/datasets/cargo2000.csv
+[Log] Deserializing /root/app/workdir/utility/configuration.py
+[Log] Deserializing /root/app/workdir/utility/dataoperations.py
+[Log] Deserializing /root/app/workdir/utility/enums.py
+[Log] Deserializing /root/app/workdir/utility/exceptions.py
+[Log] Deserializing /root/app/workdir/utility/generator.py
+[Log] Deserializing /root/app/workdir/utility/hyperparameteroptimization.py
+[Log] Deserializing /root/app/workdir/utility/models.py
+[Log] Deserializing /root/app/workdir/utility/preprocessing.py
+[Log] Deserializing /root/app/workdir/utility/regularization.py
+[Log] Deserializing /root/app/workdir/utility/run.py
+[Log] Deserialized 26 files
+[Log] Processing training work package
+[Log] Create worker process.
+[Log] Create process for: /bin/bash -c "python3 caise2019_c2k.py" in /root/app/workdir
+[Log] Starting process for: /bin/bash -c "python3 caise2019_c2k.py"
+2019-02-26 06:53:10.061843: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-02-26 06:53:10.737672: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-02-26 06:53:10.738448: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: GeForce GTX 1060 6GB major: 6 minor: 1 memoryClockRate(GHz): 1.7715
+pciBusID: 0000:01:00.0
+totalMemory: 5.93GiB freeMemory: 5.86GiB
+2019-02-26 06:53:10.738467: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2019-02-26 06:53:11.188164: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-26 06:53:11.188188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2019-02-26 06:53:11.188193: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2019-02-26 06:53:11.188384: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5636 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060 6GB, pci bus id: 0000:01:00.0, compute capability: 6.1)
+traindata_split_index defined: 0
+traindata_split defined: 1
+neurons defined: 100
+bagging_putback defined: True
+traindata_duplicate defined: 0
+max_epochs defined: 500
+datadefinition defined: <datadefinitions.cargo2000.Cargo2000 object at 0x7f0145a99e10>
+save_model defined: True
+learningrate defined: 0.002
+tensorboard defined: False
+testdata_split defined: 0.3333
+dropout defined: 0.1
+patience_earlystopping defined: 40
+traindata_shuffle defined: False
+patience_reducelr defined: 10
+processor defined: Processor.GPU
+max_sequencelength defined: 150000
+verbose defined: False
+gradientclipvalue defined: 3
+rnntype defined: RnnType.LSTM
+layers defined: 2
+bagging_size defined: 0.6
+running defined: 0
+batch_size defined: 64
+validationdata_split defined: 0.2
+cudnn defined: True
+bagging defined: True
+bidirectional defined: False
+datageneration_pattern defined: DataGenerationPattern.Fit
+keras version: 2.2.2
+tensorflow version: 1.9.0
+tensorflow session cleaned
+multi process gpu usage: enabled
+tensorflow configured
+read 56082 rows
+sequences truncated to 150000
+offset0: null
+offset1: 0
+offset2: 0
+offset3: 0
+offset4: 0
+offset5: 0
+offset6: 0
+offset7: 0
+offset8: 0
+divisor0: null
+divisor1: 1153.615438108484
+divisor2: 6666.367996861738
+divisor3: 1412.8796226953389
+divisor4: 1638.5187047537534
+divisor5: 7332.0577368852755
+divisor6: 17233.036482293785
+divisor7: 17819.202310901892
+divisor8: 1988.1400092721371
+maxlen 28 
+total chars: 16, target chars: 17
+characters:  ['1', '10', '11', '12', '13', '14', '15', '16', '2', '3', '4', '5', '6', '7', '8', '9']
+unique characters:  ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+category vectors length: 16
+num features: 22
+2102 sequences in train data
+1314 sequences in test data
+526 sequences in validation data
+2102 elements before bagging with putback True
+1261 elements after bagging with putback True
+perform full in-memory sentence generation
+train_sentences: 17868
+validation_sentences: 7440
+Vectorization...
+Build model...
+imported keras API for model creation
+creating stateless cudnn lstm model
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+cu_dnnlstm_1 (CuDNNLSTM)     (None, 28, 100)           49600     
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 28, 100)           400       
+_________________________________________________________________
+cu_dnnlstm_2 (CuDNNLSTM)     (None, 100)               80800     
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 100)               400       
+_________________________________________________________________
+time_output (Dense)          (None, 1)                 101       
+=================================================================
+Total params: 131,301
+Trainable params: 130,901
+Non-trainable params: 400
+_________________________________________________________________
+Train on 17868 samples, validate on 7440 samples
+Epoch 1/500
+ - 4s - loss: 0.4637 - val_loss: 0.4820
+Epoch 2/500
+ - 2s - loss: 0.3872 - val_loss: 0.4169
+Epoch 3/500
+ - 2s - loss: 0.3762 - val_loss: 0.4797
+Epoch 4/500
+ - 2s - loss: 0.3715 - val_loss: 0.4988
+Epoch 5/500
+ - 2s - loss: 0.3664 - val_loss: 0.5403
+Epoch 6/500
+ - 2s - loss: 0.3650 - val_loss: 0.4926
+Epoch 7/500
+ - 2s - loss: 0.3607 - val_loss: 0.4324
+Epoch 8/500
+ - 2s - loss: 0.3612 - val_loss: 0.5631
+Epoch 9/500
+ - 2s - loss: 0.3621 - val_loss: 0.3810
+Epoch 10/500
+ - 2s - loss: 0.3545 - val_loss: 0.4336
+Epoch 11/500
+ - 2s - loss: 0.3511 - val_loss: 0.4293
+Epoch 12/500
+ - 2s - loss: 0.3470 - val_loss: 0.3949
+Epoch 13/500
+ - 2s - loss: 0.3434 - val_loss: 0.4507
+Epoch 14/500
+ - 2s - loss: 0.3401 - val_loss: 0.4185
+Epoch 15/500
+ - 2s - loss: 0.3354 - val_loss: 0.4678
+Epoch 16/500
+ - 2s - loss: 0.3295 - val_loss: 0.4522
+Epoch 17/500
+ - 2s - loss: 0.3224 - val_loss: 0.4223
+Epoch 18/500
+ - 2s - loss: 0.3188 - val_loss: 0.4275
+Epoch 19/500
+ - 2s - loss: 0.3148 - val_loss: 0.4332
+Epoch 20/500
+ - 2s - loss: 0.2973 - val_loss: 0.4090
+Epoch 21/500
+ - 2s - loss: 0.2917 - val_loss: 0.4233
+Epoch 22/500
+ - 2s - loss: 0.2905 - val_loss: 0.4039
+Epoch 23/500
+ - 2s - loss: 0.2862 - val_loss: 0.4177
+Epoch 24/500
+ - 2s - loss: 0.2815 - val_loss: 0.4222
+Epoch 25/500
+ - 2s - loss: 0.2775 - val_loss: 0.4207
+Epoch 26/500
+ - 2s - loss: 0.2769 - val_loss: 0.4112
+Epoch 27/500
+ - 2s - loss: 0.2723 - val_loss: 0.4210
+Epoch 28/500
+ - 2s - loss: 0.2668 - val_loss: 0.4305
+Epoch 29/500
+ - 2s - loss: 0.2654 - val_loss: 0.4267
+Epoch 30/500
+ - 2s - loss: 0.2557 - val_loss: 0.4217
+Epoch 31/500
+ - 2s - loss: 0.2542 - val_loss: 0.4324
+Epoch 32/500
+ - 2s - loss: 0.2500 - val_loss: 0.4285
+Epoch 33/500
+ - 2s - loss: 0.2477 - val_loss: 0.4305
+Epoch 34/500
+ - 2s - loss: 0.2501 - val_loss: 0.4334
+Epoch 35/500
+ - 2s - loss: 0.2440 - val_loss: 0.4220
+Epoch 36/500
+ - 2s - loss: 0.2441 - val_loss: 0.4299
+Epoch 37/500
+ - 2s - loss: 0.2408 - val_loss: 0.4484
+Epoch 38/500
+ - 2s - loss: 0.2383 - val_loss: 0.4657
+Epoch 39/500
+ - 2s - loss: 0.2361 - val_loss: 0.4343
+Epoch 40/500
+ - 2s - loss: 0.2334 - val_loss: 0.4342
+Epoch 41/500
+ - 2s - loss: 0.2303 - val_loss: 0.4395
+Epoch 42/500
+ - 2s - loss: 0.2288 - val_loss: 0.4342
+Epoch 43/500
+ - 2s - loss: 0.2302 - val_loss: 0.4376
+Epoch 44/500
+ - 2s - loss: 0.2299 - val_loss: 0.4314
+Epoch 45/500
+ - 2s - loss: 0.2279 - val_loss: 0.4398
+Epoch 46/500
+ - 2s - loss: 0.2311 - val_loss: 0.4448
+Epoch 47/500
+ - 2s - loss: 0.2266 - val_loss: 0.4423
+Epoch 48/500
+ - 2s - loss: 0.2265 - val_loss: 0.4472
+Epoch 49/500
+ - 2s - loss: 0.2257 - val_loss: 0.4457
+/usr/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+Using TensorFlow backend.
+/usr/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+/usr/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+Load model for predictions...
+imported keras API for model creation
+creating stateless cudnn lstm model
+Model loaded from checkpoint
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+cu_dnnlstm_3 (CuDNNLSTM)     (None, 28, 100)           49600     
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 28, 100)           400       
+_________________________________________________________________
+cu_dnnlstm_4 (CuDNNLSTM)     (None, 100)               80800     
+_________________________________________________________________
+batch_normalization_4 (Batch (None, 100)               400       
+_________________________________________________________________
+time_output (Dense)          (None, 1)                 101       
+=================================================================
+Total params: 131,301
+Trainable params: 130,901
+Non-trainable params: 400
+_________________________________________________________________
+Make predictions...
+sequences: 1314
+finished prediction
+tensorflow session cleaned
+[Log] Finished process for: /bin/bash -c "python3 caise2019_c2k.py"
+[Log] Process finished.

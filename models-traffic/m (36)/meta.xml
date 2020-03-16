@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<MetaStruct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Duration>PT1H33M11.9016326S</Duration>
+  <Epochs>67</Epochs>
+  <LastEpochDuration>79s</LastEpochDuration>
+  <NodeName>rnn-prediction-backend-master-rzlmb</NodeName>
+  <Version>1.1.0.17005</Version>
+  <OS>Ubuntu</OS>
+  <ProcessingUnit>GPU</ProcessingUnit>
+  <Timestamp>2019-03-01T15:40:11.6699395Z</Timestamp>
+  <PredictionModel>
+    <CreatedAt>2019-03-01T15:40:11.6699395Z</CreatedAt>
+    <ModelFileName>610c612c-c12a-4d05-95bf-4526d4852ab2</ModelFileName>
+    <TrainingTime>PT1H33M11.9016326S</TrainingTime>
+  </PredictionModel>
+</MetaStruct>
