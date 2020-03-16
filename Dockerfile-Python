@@ -1,0 +1,7 @@
+FROM python:3.7.6-buster
+WORKDIR /threshold-learning
+COPY requirements.txt .
+RUN pip3 install -v -r requirements.txt 
+COPY gym-threshold gym-threshold
+RUN pip3 install -v -e gym-threshold
+CMD ["python3"]

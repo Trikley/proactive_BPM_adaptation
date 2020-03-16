@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+    threshold-python:
+        image: threshold-python
+        command: bash -c "tail -f /dev/null"
+        volumes:
+            - ./python_src/:/threshold-learning/python_src
+        environment: 
+            - PYTHONPATH=/threshold-learning
+            
+    threshold-java:
+        image: threshold-java
+        command: sh -c "tail -f /dev/null"
+        working_dir: /threshold-learning
+        volumes: 
+            - ./:/threshold-learning

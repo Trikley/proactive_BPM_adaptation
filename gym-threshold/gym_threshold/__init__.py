@@ -1,0 +1,70 @@
+from gym.envs.registration import register
+
+register(
+    id='threshold-intra_process-v0',
+    entry_point='gym_threshold.envs:ThresholdEnvIntraProcess',
+)
+register(
+    id='threshold-intra_process-action0-v0',
+    entry_point='gym_threshold.envs:ActionOEnv',
+)
+register(
+    id='threshold-intra_process-action1-v0',
+    entry_point='gym_threshold.envs:Action1Env',
+)
+register(
+    id='threshold-intra_process-extended-space-v0',
+    entry_point='gym_threshold.envs:ThresholdEnvIntraProcessExtended',
+)
+register(
+    id='threshold-intra_process-extended-space-no-step-v0',
+    entry_point='gym_threshold.envs:ThresholdEnvIntraProcessExtendedNoStep',
+)
+register(
+    id='threshold-intra_process-extended-space-end-reward-v0',
+    entry_point='gym_threshold.envs:ThresholdEnvIntraProcessExtendedEndReward',
+)
+register(
+    id='extended-state-fixed-end-not-adapted-v0',
+    entry_point='gym_threshold.envs:ExtendedStateFixedEndNotAdapted',
+)
+register(
+    id='extended-state-fixed-end-reward-v0',
+    entry_point='gym_threshold.envs:ExtendedStateFixedEndReward',
+)
+register(
+    id='extended-state-v0',
+    entry_point='gym_threshold.envs:ExtendedState',
+)
+register(
+    id='extended-state-fixed-step-penalty-v0',
+    entry_point='gym_threshold.envs:ExtendedStateFixedStepPen',
+)
+register(
+    id='extended-state-semi-fixed-end-not-adapted-v0',
+    entry_point='gym_threshold.envs:ExtendedStateSemiFixedEndNotAdapted',
+)
+register(
+    id='semi-fixed-end-not-adapted-maintain-v0',
+    entry_point='gym_threshold.envs:SemiFixedEndNotAdaptedMaintain',
+)
+register(
+    id='extended-state-cost-reward-v0',
+    entry_point='gym_threshold.envs:ExtendedStateCostReward',
+)
+register(
+    id='maintain-extended-state-cost-reward-v0',
+    entry_point='gym_threshold.envs:MaintainRatioExtendedStateCostReward',
+)
+register(
+    id='cnn-state-cost-reward-v0',
+    entry_point='gym_threshold.envs:CNNStateCostReward',
+)
+register(
+    id='master-state-cost-reward-v0',
+    entry_point='gym_threshold.envs:MasterStateCostReward',
+)
+register(
+    id='master-state-master-reward-v0',
+    entry_point='gym_threshold.envs:MasterStateMasterReward',
+)
