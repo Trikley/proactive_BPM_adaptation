@@ -11,4 +11,4 @@ Then:
 2. Execute "java -jar 00_ExperimentMain.jar" to load all the models into memory and set up four experiments with the four datasets. You can also give a list within swirly brackets (ex. {1,2,2,3}) to the jar in order to only create experiments with those specific datasets. Proceede to the next step, as soon as you see the output "Waiting for RL connection..."
 3. Run "docker exec -it <id of the python container> bash" in a new terminal to open an interactive shell within the python-container.
 4. Execute "python python_src/runexperiments.py" to start 4 experiments. You can tinker with the runexperiments.py script to modify those. 
-5. The experiments will generate .csv files, numbered in the order of the experiments, within the python_src folder. You can run "java -jar 00_GnuPlotter.jar" inside the java-container to plot pngs for all those generated csv files.
+5. The experiments will generate .csv files, numbered in the order of the experiments, within the python_src folder. Copy those into the python_src folder, then you can run "java -jar 00_GnuPlotter.jar" inside the java-container to plot pngs for all those generated csv files.
